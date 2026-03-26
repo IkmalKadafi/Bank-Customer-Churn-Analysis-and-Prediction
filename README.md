@@ -36,7 +36,7 @@ Tabel berikut merupakan rangkuman seluruh tahapan dari awal hingga akhir proyek:
 
 Proyek ini merupakan implementasi *End-to-End Data Science*, di mana masing-masing bagian *pipeline* memanfaatkan *tools* yang berbeda sesuai fungsinya:
 
-1. **SQL (Structured Query Language)**
+1. **MySQL**
    - Digunakan secara ekstensif pada tahap awal (*Data Understanding* & *Cleaning*). Terdapat file `.sql` (`data_cleaning.sql`, `create_table.sql`) yang menjalankan operasi penggabungan (*join*), penyaringan (*filtering*), dan standardisasi tabel di level *database* untuk memastikan integritas data.
    
 2. **Python (Jupyter Notebook)**
@@ -48,3 +48,9 @@ Proyek ini merupakan implementasi *End-to-End Data Science*, di mana masing-masi
 
 3. **Microsoft Power BI**
    - Berperan krusial sebagai jembatan antara teknis data analitik dan dunia bisnis. Power BI (`Dashboard.pbix`) digunakan untuk menerjemahkan matriks prediktif yang kompleks menjadi visualisasi interaktif yang mudah dipahami, memungkinkan jajaran eksekutif menganalisis *Key Influencers* (aktor penentu *churn*) dan menentukan taktik penyelamatan *Balance at Risk*.
+
+---
+
+## Penutup
+
+Proyek ini mendemonstrasikan bagaimana kolaborasi ragam teknologi (*End-to-End Pipeline*)—mulai dari manipulasi data mentah dengan **MySQL**, pembuatan model prediktif berbasis *Machine Learning* yang kuat menggunakan **Python**, hingga presentasi visual yang interaktif melalui **Power BI**—mampu memberikan nilai bisnis yang nyata. Melalui pendekatan yang bertumpu pada data, bank diharapkan dapat bergerak dan mengambil strategi preventif (*proactive retention*) sebelum kerugian finansial akibat nasabah yang *churn* benar-benar terjadi.
