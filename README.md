@@ -29,3 +29,22 @@ Tabel berikut merupakan rangkuman seluruh tahapan dari awal hingga akhir proyek:
 - `interpretasi_dashboard.md`: File ini memuat analisis yang komprehensif terkait temuan KPI, grafik demografi, dan wawasan yang kami dapatkan langsung dari tampilan Dashboard.
 - `Dashboard.pdf`: Hasil rendering visual laporan interaktif.
 - `.ipynb` dan file `.pkl`: Kode notebook eksperimen Machine Learning, skrip transformasi *Data Preparation*, dan model ekripsi akhir yang sudah dilatih (seperti model XGBoost & Random Forest).
+
+---
+
+## Teknologi & Tools yang Digunakan
+
+Proyek ini merupakan implementasi *End-to-End Data Science*, di mana masing-masing bagian *pipeline* memanfaatkan *tools* yang berbeda sesuai fungsinya:
+
+1. **SQL (Structured Query Language)**
+   - Digunakan secara ekstensif pada tahap awal (*Data Understanding* & *Cleaning*). Terdapat file `.sql` (`data_cleaning.sql`, `create_table.sql`) yang menjalankan operasi penggabungan (*join*), penyaringan (*filtering*), dan standardisasi tabel di level *database* untuk memastikan integritas data.
+   
+2. **Python (Jupyter Notebook)**
+   - Menjadi nyawa utama bagi pemrosesan algoritma (*Machine Learning Workflow*). Di dalam file `bank_customer_churn.ipynb`, Python (bersama pustaka **Pandas**, **Numpy**, **Scikit-Learn**, dan **XGBoost**) dimanfaatkan untuk:
+     - Eksplorasi data mendalam (*Exploratory Data Analysis / EDA*).
+     - *Feature Engineering* (menciptakan indikator *Financial Health Score* dsb).
+     - Pelatihan model (*Training*), optimasi *Hyperparameter Tuning*, dan penentuan titik *Threshold* yang tepat.
+   - Model beserta *scaler* kemudian diekspor menjadi format `.pkl` agar dapat langsung digunakan untuk prediksi di masa mendatang tanpa *training* ulang.
+
+3. **Microsoft Power BI**
+   - Berperan krusial sebagai jembatan antara teknis data analitik dan dunia bisnis. Power BI (`Dashboard.pbix`) digunakan untuk menerjemahkan matriks prediktif yang kompleks menjadi visualisasi interaktif yang mudah dipahami, memungkinkan jajaran eksekutif menganalisis *Key Influencers* (aktor penentu *churn*) dan menentukan taktik penyelamatan *Balance at Risk*.
