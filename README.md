@@ -1,6 +1,10 @@
 # Bank Customer Churn Analysis & Prediction
 
-Proyek ini bertujuan untuk memprediksi probabilitas nasabah bank yang akan berhenti (*churn*) serta memberikan *insights* dan rekomendasi bisnis untuk meminimalisasi kerugian finansial bank (terutama target mengamankan $115.4M total aset dan melacak $12.42M *Balance at Risk*).
+Proyek ini bertujuan untuk memprediksi probabilitas nasabah yang akan berhenti (*churn*) dari sebuah **Bank di Vietnam**, serta memberikan *insights* dan rekomendasi bisnis untuk meminimalisasi kerugian finansial bank (terutama target mengamankan $115.4M total aset dan melacak $12.42M *Balance at Risk*).
+
+**Tentang Dataset:**
+- Seluruh nilai nominal uang di dalam proyek ini (termasuk saldo / *balance*) telah **dikonversi ke Dolar Amerika Serikat (USD)** guna menstandarkan interpretasi model analitik.
+- Dataset mentah yang digunakan diambil dari platform publik Kaggle: [Vietnam Bank Churn Dataset 2025](https://www.kaggle.com/datasets/tranhuunhan/vietnam-bank-churn-dataset-2025).
 
 Proyek analitik ini disusun ke dalam 8 (delapan) fase utama, mencakup persiapan *source data* hingga divisualisasikan melalui **Business Intelligence (Power BI)**.
 
